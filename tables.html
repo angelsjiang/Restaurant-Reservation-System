@@ -18,8 +18,19 @@
             <p>If you are still a hungry piggy please make a reservation by clicking the buttons down below!</p>
             <a href="/"><button type="button" class="btn btn-info btn-lg">Home Page</button></a>
             <a href="/reservation"><button type="button" class="btn btn-info btn-lg">Make Reservation</button></a>
-            <a href="/tables"><button type="button" class="btn btn-info btn-lg">View Tables</button></a>
+            <button type="button" class="btn btn-info btn-lg">View Tables</button>
           </div>
     </body>
-    <script src="server.js"></script>
+    <script type = "text/javascript">
+        // when you click on the view reservation button, 
+        // go through the array and display the table info
+        $("#viewBtn").on("click", function() {
+
+            for(var i = 0; i < resInfo.length; i++) {
+            // Should dynamically create new div for displaying
+
+        }
+        });
+
+    </script>
 </html>

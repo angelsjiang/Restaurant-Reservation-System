@@ -23,10 +23,10 @@ app.post('/reservation', function  (req, res) {
     console.log('Save a reservation')
 })
 
-// GET all tables
-app.get('/tables', function  (req, res) {
-    res.sendFile(path.join(__dirname, 'tables.html'))
-})
+// // GET all tables
+// app.get('/tables', function  (req, res) {
+//     res.sendFile(path.join(__dirname, 'tables.html'))
+// })
 
 // Listen on port 3000
 app.listen(PORT, function () {
