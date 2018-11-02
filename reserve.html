@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="firstcontainer">
+    <body class="">
         <div class="jumbotron">
             <h1 class="display-4">Welcome To The Amazing Restaurant!</h1>
             <p class="lead">Our Restaurant is so good and amazing that you have to WAIT to try our awesome food! or you can make a reservation and plan a whole evening around us to try our food! who knew people would be so hungry!</p>
@@ -18,6 +18,28 @@
             <a><button type="button" href="Reservation" class="btn btn-info btn-lg">Make Reservation</button></a>
             <a><button type="button" href="Tables" class="btn btn-info btn-lg">View Tables</button></a>
           </div>
+          <div class="formbox firstcontainer">
+                <form>
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="emailaddress" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="email" class="form-text text-muted">We'll never share your email with anyone else ;) .</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="name">first and last name</label>
+                          <input type="name" class="form-control" id="name" placeholder="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phonenumber">phone number</label>
+                            <input type="phonenumber" class="form-control" id="number" placeholder="phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="uniqueID">Unique ID</label>
+                            <input type="uniqueID" class="form-control" id="uniqueID" placeholder="custom name">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+          </div>
     </body>
-    <script src="MANNYSJS"></script>
+    <script src="server.js"></script>
 </html>
