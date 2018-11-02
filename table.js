@@ -1,8 +1,9 @@
-var Table = function(name, phone, email, time) {
+
+var Table = function(email, name, phone, uniqueID) {
+    this.Email = email;
     this.Name = name;
     this.Phone = phone;
-    this.Email = email;
-    this.Time = time;
+    this.UniqueID = uniqueID;
 };
 
 module.exports = Table;
