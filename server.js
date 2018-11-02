@@ -10,12 +10,12 @@ app.use(bodyParser.json())
 
 // GET home page
 app.get('/', function  (req, res) {
-    res.send('Home Page')
+    res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 // GET reservation
 app.get('/reservation', function  (req, res) {
-    res.send('Reservation Page')
+    res.sendFile(path.join(__dirname, 'reserve.html'))
 })
 
 // POST reservation
@@ -25,7 +25,7 @@ app.post('/reservation', function  (req, res) {
 
 // GET all tables
 app.get('/tables', function  (req, res) {
-    res.send('Tables Page')
+    res.sendFile(path.join(__dirname, 'tables.html'))
 })
 
 // Listen on port 3000
