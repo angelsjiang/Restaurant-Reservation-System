@@ -4,7 +4,7 @@ var resInfo = [];
 var waitlist = [];
 
 // Make reservation
-$(".formbox.firstcontainer").on("click", "submit", function() {
+$("#submit").on("click", function() {
     // get userinput, push it into new table object,
     // then push the new table object into resInfo array
     var usrEmail = $("#emailaddress").val().trim();
@@ -19,6 +19,7 @@ $(".formbox.firstcontainer").on("click", "submit", function() {
     if(resInfo.length <= 7) {
         resInfo.push(table);
         // and then maybe display successfully reserved
+        alert("Reservation successfully made!");
     }
     else {
         waitlist.push(table);
@@ -28,7 +29,7 @@ $(".formbox.firstcontainer").on("click", "submit", function() {
 
 // when you click on the view reservation button, 
 // go through the array and display the table info
-$(".jumbotron").on("click", "viewBtn", function() {
+$("#viewBtn").on("click", function() {
 
     for(var i = 0; i < resInfo.length; i++) {
     // Should dynamically create new div for displaying
